@@ -9,8 +9,21 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Home } from "./component/home.js";
-
+//import { Home } from "./component/home.js";
+//import { SecondCounter } from "./component/SimpleCounter"
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
-a
+function SecondsCounter(props) {
+	return (
+		<div className="bigCounter">
+			<div className="clock">
+				<i className="far fa-clock"> </i>
+			</div>
+            
+			<div className="four">0</div>
+			<div className="three">0</div>
+			<div className="two">0</div>
+			<div className="one">0</div>
+		</div>
+	);
+}
+ReactDOM.render(<SecondsCounter />, document.querySelector("#app"));
